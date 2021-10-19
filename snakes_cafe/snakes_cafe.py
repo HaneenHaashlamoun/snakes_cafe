@@ -45,8 +45,8 @@ listMenu = [
 def orders():
     order = []
     selection = input('> ').lower()
-    while selection != 'quit':
-        if selection in listMenu:
+    while selection.lower() != 'quit':
+        if selection.lower() in listMenu:
             order.append(selection)
             print(f"* {order.count(selection)} order of {selection} have been added to your meal *")
         else:
